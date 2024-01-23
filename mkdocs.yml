@@ -1,8 +1,26 @@
-site_name: Avocado
+site_name: QuAIR-Platform Documentation
 theme:
-  name: material
-  language: en
-  output_format: html5
-  features:
-    - search.highlighting
-    - search.shared_links
+  name: 'material'
+
+# 插件配置
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
+# 导航
+nav:
+  - Home: index.md
+  - API Documentation: api/index.md
+
+# 额外的 CSS 和 JavaScript
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+
+# MkDocs Material 扩展（可选）
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
