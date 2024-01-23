@@ -1,0 +1,8 @@
+site_name: Avocado
+theme:
+  name: material
+  language: en
+  output_format: html5
+  features:
+    - search.highlighting
+    - search.shared_links
